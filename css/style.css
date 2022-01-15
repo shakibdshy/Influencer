@@ -26,7 +26,8 @@ li {
     list-style: none;
 }
 
-.container, .container-fluid {
+.container,
+.container-fluid {
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
@@ -62,31 +63,6 @@ li {
 
 .d-none {
     display: none;
-}
-
-@media screen and (min-width: 768px) {
-    .column-md-3 {
-        flex: 0 0 auto;
-        width: 25%;
-    }
-
-    .clumn-md-6 {
-        flex: 0 0 auto;
-        width: 50%;
-    }
-    
-    .column-md-9 {
-        flex: 0 0 auto;
-        width: 75%;
-    }
-
-    .d-md-none {
-        display: none;
-    }
-
-    .d-md-block {
-        display: block;
-    }
 }
 
 /* Header Section */
@@ -144,6 +120,7 @@ header nav a:hover {
 .cart-icon {
     margin-top: 5px;
 }
+
 /* Header Section */
 
 /* Banner Section */
@@ -152,7 +129,7 @@ header nav a:hover {
 }
 
 .banner-content {
-    text-align:center;
+    text-align: center;
     margin-bottom: 50px;
 }
 
@@ -193,15 +170,200 @@ header nav a:hover {
     background: #9b093e;
     color: #fff;
 }
+
 /* Banner Section */
 
 /* Client Section */
 .client-area {
     padding-bottom: 50px;
 }
+
 .client-area .row {
     align-items: center;
     gap: 30px;
     justify-content: center;
 }
+
 /* Client Section */
+
+/* Product Section */
+.product-area {
+    padding-bottom: 50px;
+}
+
+.product-area h2 {
+    font-weight: 600;
+    color: #3A3A3A;
+    margin-bottom: 20px;
+}
+
+.grid-column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.product-item {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.product-item img {
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.product-item .product-img {
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.product-item:hover .product-img img{
+    transform: scale(1.1);
+}
+
+.product-area h2 {
+    text-align: center;
+}
+
+.product-content h4 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #18191F;
+    padding: 10px 0 0;
+}
+
+.product-content span {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.product-content ul {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 0;
+}
+
+.product-content li {
+    color: #5E6366;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.product-content a {
+    color: #FB8200;
+    font-size: 14px;
+}
+
+.product-content p {
+    color: #787885;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.product-btn {
+    color: #E02C6D;
+    text-align: right;
+    display: block;
+    font-weight: 700;
+    margin-top: 50px;
+    transition: all 0.3s ease;
+}
+
+.product-btn i {
+    margin-left: 5px;
+}
+
+.product-btn:hover {
+    color: #802949;
+}
+
+@media screen and (min-width: 768px) {
+    .column-md-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+
+    .column-md-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .column-md-9 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+
+    .d-md-none {
+        display: none;
+    }
+
+    .d-md-block {
+        display: block;
+    }
+
+    .banner-area .row {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .banner-img {
+        padding: 50px 0;
+        text-align: right;
+    }
+    
+    .banner-content {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .banner-content p {
+        padding: 0;
+    }
+
+    .product-area h2 {
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .product-content h4 {
+        font-weight: 600;
+    }
+
+    .product-content span {
+	    font-weight: 400;
+    }
+
+    .product-content p {
+	    font-weight: 700;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .banner-content h1 {
+        font-size: 52px;
+    }
+
+    .banner-content p {
+        padding-right: 20px;
+        font-size: 16px;
+    }
+
+    .client-area {
+        padding: 50px 0;
+    }
+
+    .client-area .row {
+        padding: 50px 0;
+        border-top: 1px solid #C0CCDA;
+        border-bottom: 1px solid #C0CCDA;
+    }
+        
+    .client-area .row {
+        gap: 60px;
+    }
+}
