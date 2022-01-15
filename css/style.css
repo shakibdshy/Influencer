@@ -65,6 +65,20 @@ li {
     display: none;
 }
 
+@keyframes slideInOut {
+  0% {
+    transform: translateY(20px);
+  }
+  
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(20px);
+  }
+}
+
 /* Header Section */
 header {
     margin-top: 35px;
@@ -128,6 +142,10 @@ header nav a:hover {
     padding: 20px 50px;
 }
 
+.banner-img img {
+    animation: slideInOut 2s infinite;
+}
+
 .banner-content {
     text-align: center;
     margin-bottom: 50px;
@@ -170,7 +188,6 @@ header nav a:hover {
     background: #9b093e;
     color: #fff;
 }
-
 /* Banner Section */
 
 /* Client Section */
@@ -183,7 +200,6 @@ header nav a:hover {
     gap: 30px;
     justify-content: center;
 }
-
 /* Client Section */
 
 /* Product Section */
@@ -281,6 +297,7 @@ header nav a:hover {
 .product-btn:hover {
     color: #802949;
 }
+
 /* Product Area */
 
 /* Blog Area */
@@ -294,7 +311,7 @@ header nav a:hover {
 }
 
 .blog-item h2 {
-    color:rgba(0, 0, 0, 0.87);
+    color: rgba(0, 0, 0, 0.87);
     font-size: 30px;
     margin-top: 20px;
     transition: all 0.3s ease;
@@ -302,8 +319,9 @@ header nav a:hover {
 }
 
 .blog-item:hover h2 {
-    color:#E02C6D;
+    color: #E02C6D;
 }
+
 /* Blog Area */
 
 /* Footer Area */
@@ -351,6 +369,7 @@ footer a:hover {
     background: #E02C6D;
     color: #fff;
 }
+
 /* Footer Area */
 
 /* Tablate Device */
@@ -445,7 +464,7 @@ footer a:hover {
     }
 
     .blog-content h2 {
-        color:rgba(0, 0, 0, 0.87);
+        color: rgba(0, 0, 0, 0.87);
         font-size: 20px;
     }
 }
