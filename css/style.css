@@ -144,6 +144,7 @@ header nav a:hover {
 .cart-icon {
     margin-top: 5px;
 }
+/* Header Section */
 
 /* Banner Section */
 .banner-img {
@@ -192,3 +193,15 @@ header nav a:hover {
     background: #9b093e;
     color: #fff;
 }
+/* Banner Section */
+
+/* Client Section */
+.client-area {
+    padding-bottom: 50px;
+}
+.client-area .row {
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+/* Client Section */
