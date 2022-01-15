@@ -220,7 +220,7 @@ header nav a:hover {
     border-radius: 5px;
 }
 
-.product-item:hover .product-img img{
+.product-item:hover .product-img img {
     transform: scale(1.1);
 }
 
@@ -282,6 +282,56 @@ header nav a:hover {
     color: #802949;
 }
 
+/* Product Area */
+
+/* Footer Area */
+footer {
+    text-align: center;
+    background: #0A0826;
+    padding: 50px 0;
+}
+
+footer h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+footer span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #D9DBE1;
+    margin-top: 10px;
+    display: block;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+footer a {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    display: block;
+}
+
+
+footer a:hover {
+    background: #E02C6D;
+    color: #fff;
+}
+
+/* Footer Area */
+
 @media screen and (min-width: 768px) {
     .column-md-3 {
         flex: 0 0 auto;
@@ -306,6 +356,10 @@ header nav a:hover {
         display: block;
     }
 
+    header {
+        margin-top: 50px;
+    }
+
     .banner-area .row {
         flex-direction: row-reverse;
         align-items: center;
@@ -315,7 +369,7 @@ header nav a:hover {
         padding: 50px 0;
         text-align: right;
     }
-    
+
     .banner-content {
         text-align: left;
         margin-bottom: 0;
@@ -335,11 +389,11 @@ header nav a:hover {
     }
 
     .product-content span {
-	    font-weight: 400;
+        font-weight: 400;
     }
 
     .product-content p {
-	    font-weight: 700;
+        font-weight: 700;
     }
 }
 
@@ -362,7 +416,7 @@ header nav a:hover {
         border-top: 1px solid #C0CCDA;
         border-bottom: 1px solid #C0CCDA;
     }
-        
+
     .client-area .row {
         gap: 60px;
     }
