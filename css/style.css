@@ -147,5 +147,48 @@ header nav a:hover {
 
 /* Banner Section */
 .banner-img {
-    padding: 20px 50px 0;
+    padding: 20px 50px;
+}
+
+.banner-content {
+    text-align:center;
+    margin-bottom: 50px;
+}
+
+.banner-content h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #3A3A3A;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #3A3A3A;
+    line-height: 1.5;
+    padding: 0 50px;
+}
+
+.banner-content .btn {
+    margin-top: 25px;
+}
+
+.btn {
+    padding: 10px 24px;
+    border-radius: 41px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-red {
+    background: #E02C6D;
+    color: #fff;
+}
+
+.btn-red:hover {
+    background: #9b093e;
+    color: #fff;
 }
