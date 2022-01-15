@@ -401,6 +401,14 @@ footer a:hover {
         margin-top: 50px;
     }
 
+    .header-logo {
+        text-align: left;
+    }
+
+    .header-logo a {
+        font-size: 24px;
+    }
+
     .banner-area .row {
         flex-direction: row-reverse;
         align-items: center;
